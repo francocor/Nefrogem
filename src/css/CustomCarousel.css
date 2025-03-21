@@ -1,0 +1,19 @@
+.carousel-fullwidth {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .image1 {
+    background-image: url('https://via.placeholder.com/1920x1080?text=Slide+1');
+  }
+  
+  .image2 {
+    background-image: url('https://via.placeholder.com/1920x1080?text=Slide+2');
+  }
+  
+  .image3 {
+    background-image: url('https://via.placeholder.com/1920x1080?text=Slide+3');
+  }

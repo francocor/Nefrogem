@@ -1,0 +1,15 @@
+.acerca, .staff, .departments, .testimonials, .location {
+    padding: 80px 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .acerca h2, .staff h2, .departments h2, .testimonials h2, .location h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
