@@ -13,8 +13,17 @@ function Contact() {
           <button type="submit">Enviar</button>
         </form>
         <div className="map-container">
-          {/* mapa */}
-          Mapa de Ubicación
+          <iframe
+            title="Ubicación de Nefrogen"
+            src="https://www.google.com/maps?q=Santiago+del+estero+1134,San+Miguel+de+Tucuman,Tucuman,Argentina&output=embed"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            aria-hidden="false"
+            tabIndex="0"
+          ></iframe>
         </div>
       </div>
     </main>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/section.css';
+import martin from "../assets/martinchouadoc.jpg";
 
 function Staff() {
   return (
@@ -7,9 +8,9 @@ function Staff() {
       <h2>Staff Profesional</h2>
       <div className="staff-grid">
         <div className="staff-item">
-          <div className="image-placeholder">Foto</div>
-          <h3>Dr. Profesional</h3>
-          <p>Especialidad</p>
+          <img src={martin} alt="Dr. Profesional" className="image-placeholder" />
+          <h3>Dr.Choua Martin</h3>
+          <p>Nefrologo-Director Medico</p>
         </div>
         <div className="staff-item">
           <div className="image-placeholder">Foto</div>

@@ -5,9 +5,18 @@ function Location() {
   return (
     <section className="location" id="location">
       <h2>Ubicación</h2>
-      <div className="map-placeholder">
-        {/* Aquí puedes insertar el mapa o un placeholder */}
-        Mapa de Ubicación
+      <div className="map-container">
+        <iframe
+          title="Ubicación de Nefrogen"
+          src="https://www.google.com/maps?q=Santiago+del+estero+1134,San+Miguel+de+Tucuman,Tucuman,Argentina&output=embed"
+          width="100%"
+          height="450"
+          frameBorder="0"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex="0"
+        ></iframe>
       </div>
     </section>
   );

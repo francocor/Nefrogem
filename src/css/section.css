@@ -8,7 +8,37 @@
     color: #007BFF;
     margin-bottom: 20px;
   }
+
+  .staff-grid {
+    display: flex;
+    flex-wrap: wrap;        
+    gap: 20px;              
+    justify-content: center;
+  }
   
+  .staff-item {
+    width: 300px;           
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;     
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    padding: 20px;          
+    text-align: center;
+  }
+  .staff-item img.image-placeholder {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .map-container {
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }

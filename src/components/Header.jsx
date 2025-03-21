@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../css/Header.css';
+import Logo1 from "../assets/NefroGenLogoBlanco.png";
+import Logo2 from "../assets/NefroGenLogoGris.png";
 
 function Header() {
   const [navbarSolid, setNavbarSolid] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setNavbarSolid(true);
-      } else {
-        setNavbarSolid(false);
-      }
+      setNavbarSolid(window.scrollY > 80);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -20,9 +18,20 @@ function Header() {
   }, []);
 
   return (
-    <Navbar expand="lg" fixed="top" className={navbarSolid ? 'navbar-solid' : 'navbar-transparent'}>
+    <Navbar
+      expand="lg"
+      fixed="top"
+      /* Quitar variant y bg si estaban */
+      className={navbarSolid ? 'navbar-solid' : 'navbar-transparent'}
+    >
       <Container>
-        <Navbar.Brand as={Link} to="/">Nefrogen</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          <img 
+            src={navbarSolid ? Logo2 : Logo1} 
+            alt="Nefrogen Logo" 
+            className="logo"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

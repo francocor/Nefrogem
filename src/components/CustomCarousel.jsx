@@ -1,29 +1,44 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import '../css/CustomCarousel.css';
+import PersonalCompleto from "../assets/PersonalCompleto.jpg";
+import NefrogemFrente from "../assets/NEOFROGEN-002.jpg";
+import NefrogemInterior from "../assets/NEOFROGEN-003.jpg";
 
 function CustomCarousel() {
   return (
     <Carousel fade interval={5000}>
       <Carousel.Item>
-        <div className="carousel-fullwidth image1"></div>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${NefrogemFrente})` }}
+        ></div>
         <Carousel.Caption>
-          <h3>Slide 1</h3>
-          <p>Descripción del slide 1.</p>
+          <h3>Confíe su salud a nuestros médicos</h3>
+          <p>Servicios médicos en los
+          que puede confiar</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="carousel-fullwidth image2"></div>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${PersonalCompleto})` }}
+        ></div>
         <Carousel.Caption>
-          <h3>Slide 2</h3>
-          <p>Descripción del slide 2.</p>
+          <h3>Confie su salud a nuestros medicos</h3>
+          <p>La Nefrología del
+          Futuro, Hoy</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="carousel-fullwidth image3"></div>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${NefrogemInterior})` }}
+        ></div>
         <Carousel.Caption>
-          <h3>Slide 3</h3>
-          <p>Descripción del slide 3.</p>
+          <h3>Estamos para atenderlos</h3>
+          <p>Atención continuada
+          De Lunes a Viernes.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

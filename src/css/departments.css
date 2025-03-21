@@ -11,8 +11,9 @@
   
   .departments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
+    justify-items: center; 
   }
   
   .department-card {
@@ -47,4 +48,10 @@
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    .departments-grid {
+      grid-template-columns: 1fr; 
+    }
   }
