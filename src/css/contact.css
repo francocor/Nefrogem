@@ -1,19 +1,21 @@
 .contact {
-    padding: 80px 40px;
+    padding: 80px ;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
   }
   
   .contact h2 {
-    color: #007BFF;
+    color: #40717E;
     margin-bottom: 40px;
   }
   
   .contact-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   .contact-form {
@@ -61,6 +63,10 @@
     background: #ccc;
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .container-contact{
+    display: flex;
     justify-content: center;
   }
   

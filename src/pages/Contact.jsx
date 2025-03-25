@@ -4,15 +4,23 @@ import '../css/contact.css';
 function Contact() {
   return (
     <main className="contact">
-      <h2>Contacto</h2>
+      
+      
       <div className="contact-container">
-        <form className="contact-form">
+        <div className='row'>
+        <h2>Contacto</h2>
+        </div>
+        <div className='row container-contact'>
+          <div className='col-6'>
+ <form className="contact-form">
           <input type="text" placeholder="Nombre" />
           <input type="email" placeholder="Email" />
           <textarea placeholder="Mensaje"></textarea>
           <button type="submit">Enviar</button>
         </form>
-        <div className="map-container">
+          </div>
+          <div className='col-6' >
+ <div className="map-container">
           <iframe
             title="Ubicación de Nefrogen"
             src="https://www.google.com/maps?q=Santiago+del+estero+1134,San+Miguel+de+Tucuman,Tucuman,Argentina&output=embed"
@@ -25,6 +33,12 @@ function Contact() {
             tabIndex="0"
           ></iframe>
         </div>
+          </div>
+       
+       
+        </div>
+      
+        
       </div>
     </main>
   );

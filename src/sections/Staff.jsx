@@ -13,7 +13,7 @@ function Staff() {
           <p>Nefrologo-Director Medico</p>
         </div>
         <div className="staff-item">
-          <div className="image-placeholder">Foto</div>
+        <img src={martin} alt="Dr. Profesional" className="image-placeholder" />
           <h3>Dra. Ejemplo</h3>
           <p>Especialidad</p>
         </div>

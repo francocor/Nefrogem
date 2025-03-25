@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../css/Header.css';
@@ -6,28 +6,20 @@ import Logo1 from "../assets/NefroGenLogoBlanco.png";
 import Logo2 from "../assets/NefroGenLogoGris.png";
 
 function Header() {
-  const [navbarSolid, setNavbarSolid] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setNavbarSolid(window.scrollY > 80);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+ 
 
   return (
     <Navbar
       expand="lg"
       fixed="top"
       /* Quitar variant y bg si estaban */
-      className={navbarSolid ? 'navbar-solid' : 'navbar-transparent'}
+      className={'navbar-solid'}
     >
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img 
-            src={navbarSolid ? Logo2 : Logo1} 
+            src={Logo2} 
             alt="Nefrogen Logo" 
             className="logo"
           />

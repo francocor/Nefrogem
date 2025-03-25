@@ -5,7 +5,7 @@
   }
   
   .acerca h2, .staff h2, .departments h2, .testimonials h2, .location h2 {
-    color: #007BFF;
+    color: #40717E;
     margin-bottom: 20px;
   }
 
@@ -38,6 +38,7 @@
     max-width: 100%;
     overflow: hidden;
   }
+  
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }

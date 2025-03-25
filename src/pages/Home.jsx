@@ -13,8 +13,18 @@ function Home() {
       <Acerca />
       <Staff />
       <Departments />
-      <Testimonials />
-      <Location />
+      <div className='row'>
+        <div className='col-6'>
+        <Testimonials />
+        </div>
+        <div className='col-6'>
+        <Location />
+        </div>
+      
+      
+
+      </div>
+      
     </main>
   );
 }

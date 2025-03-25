@@ -10,7 +10,7 @@ function Location() {
           title="Ubicación de Nefrogen"
           src="https://www.google.com/maps?q=Santiago+del+estero+1134,San+Miguel+de+Tucuman,Tucuman,Argentina&output=embed"
           width="100%"
-          height="450"
+          height="100%"
           frameBorder="0"
           style={{ border: 0 }}
           allowFullScreen=""
