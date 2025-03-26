@@ -6,6 +6,12 @@
   
 }
 
+.carousel-caption {
+  background: rgba(64, 113, 126, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
 .image1 {
   background-image: url('https://via.placeholder.com/1920x1080?text=Slide+1');
 }
