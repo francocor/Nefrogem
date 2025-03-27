@@ -46,28 +46,33 @@ function Departments() {
       <div className="departments-grid">
         {departments.map((dept) => (
           <div key={dept.id} className="department-card">
-            <div
-              className="card-image"
-              style={{ backgroundImage: `url(${dept.image})` }}
-            ></div>
-            <div className="card-content">
-              {dept.iconType === 'fa' ? (
-                <FontAwesomeIcon
-                  icon={dept.icon}
-                  size="2x"
-                  style={{ color: '#40717E', marginBottom: '10px' }}
-                />
-              ) : (
-                <dept.icon
-                  size={32}
-                  color="#40717E"
-                  style={{ marginBottom: '10px' }}
-                />
-              )}
-              <h3>{dept.title}</h3>
-              <p>{dept.description}</p>
-            </div>
+          <div
+            className="card-image"
+            style={{ backgroundImage: `url(${dept.image})` }}
+          ></div>
+        
+          <div className="card-overlay">
+            <p>Más información próximamente</p>
           </div>
+        
+          <div className="card-content">
+            {dept.iconType === 'fa' ? (
+              <FontAwesomeIcon
+                icon={dept.icon}
+                size="2x"
+                style={{ color: '#40717E', marginBottom: '10px' }}
+              />
+            ) : (
+              <dept.icon
+                size={32}
+                color="#40717E"
+                style={{ marginBottom: '10px' }}
+              />
+            )}
+            <h3>{dept.title}</h3>
+            <p>{dept.description}</p>
+          </div>
+        </div>
         ))}
       </div>
     </section>

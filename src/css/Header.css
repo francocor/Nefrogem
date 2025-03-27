@@ -42,3 +42,14 @@
 .navbar .nav-link:hover::after {
   width: 100%;
 }
+.navbar-toggler {
+  border-color: #40717E !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  border-color: #40717E !important;
+  box-shadow: 0 0 0 0.25rem rgba(64, 113, 126, 0.5) !important;
+}

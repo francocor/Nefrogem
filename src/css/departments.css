@@ -68,6 +68,34 @@
   text-overflow: ellipsis;
 }
 
+/* Superposición al hacer hover */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(64, 113, 126, 0.8); /* mismo tono que el icono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 1rem;
+}
+
+.department-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
