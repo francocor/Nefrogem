@@ -6,7 +6,7 @@ function Turnos() {
   
   return (
     <main className="turnos">
-      <h2>Turnos</h2>
+      <h2 className='tituloturno'>Turnos</h2>
       <form className="turnos-form">
         <div className="form-group">
           <label>Seleccione al Profesional:</label>
@@ -33,7 +33,7 @@ function Turnos() {
           <input type="email" placeholder="Email" />
           <textarea placeholder="Mensaje"></textarea>
         </div>
-        <button type="submit">Solicitar Turno</button>
+        <button style={{background:"#40717E", borderRadius:"32px"}} type="submit">Solicitar Turno</button>
       </form>
       <p className="note">Este formulario se enviará al WP del centro para su confirmacion.</p>
     </main>

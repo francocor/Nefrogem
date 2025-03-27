@@ -14,7 +14,7 @@ function Contact() {
               <input type="text" placeholder="Nombre" />
               <input type="email" placeholder="Email" />
               <textarea placeholder="Mensaje"></textarea>
-              <button type="submit">Enviar</button>
+              <button style={{background:"#40717E", borderRadius:"32px"}} type="submit">Enviar</button>
             </form>
           </div>
           <div className="col-12 col-md-6 map-col">

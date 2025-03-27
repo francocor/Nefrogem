@@ -32,6 +32,9 @@
     border-radius: 8px;
     display: block;
   }
+  .staff-item h3{
+    margin-top: 10px !important;
+  }
 
   .map-container {
     margin: 0 auto;
