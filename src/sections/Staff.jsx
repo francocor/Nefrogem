@@ -5,7 +5,7 @@ import martin from "../assets/martinchouadoc.jpg";
 function Staff() {
   return (
     <section className="staff" id="staff">
-      <h2>Staff Profesional</h2>
+      <h2>Equipo Profesional</h2>
       <div className="staff-grid">
         <div className="staff-item">
           <img src={martin} alt="Dr. Profesional" className="image-placeholder" />

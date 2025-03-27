@@ -14,7 +14,7 @@ function Turnos() {
             value={selectedProfessional}
             onChange={(e) => setSelectedProfessional(e.target.value)}
           >
-            <option value="">-- Seleccione --</option>
+            <option value="">-- Seleccione el profesional--</option>
             <option value="Dr. Profesional">Dr. Profesional</option>
             <option value="Dra. Ejemplo">Dra. Ejemplo</option>
           </select>
