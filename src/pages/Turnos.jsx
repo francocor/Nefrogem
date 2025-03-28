@@ -14,7 +14,6 @@ function Turnos() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     if (name === 'telefono') {
       const soloNumeros = value.replace(/\D/g, '');
       setFormData({ ...formData, [name]: soloNumeros });
@@ -25,7 +24,6 @@ function Turnos() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const { nombre, telefono, email, mensaje } = formData;
 
     if (!selectedProfessional || !nombre || !telefono || !email || !mensaje) {
@@ -41,6 +39,12 @@ function Turnos() {
       icon: 'success',
       title: 'Turno solicitado',
       text: 'Tu solicitud fue enviada correctamente. Nos pondremos en contacto por WhatsApp.',
+    }).then(() => {
+      
+      const whatsappNumber = 'NUMERO_DEL_CENTRO'; 
+      const whatsappMessage = `Hola, solicito turno con ${selectedProfessional}. Mi nombre es ${nombre} y mi teléfono es ${telefono}.`;
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+      window.open(whatsappUrl, '_blank');
     });
 
     setTurnoEnviado(true);
@@ -51,10 +55,6 @@ function Turnos() {
       mensaje: '',
     });
     setSelectedProfessional('');
-
-    // setTimeout(() => {
-    //   setTurnoEnviado(false);
-    // }, 4000);
   };
 
   return (

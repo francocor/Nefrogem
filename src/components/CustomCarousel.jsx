@@ -4,10 +4,15 @@ import '../css/CustomCarousel.css';
 import PersonalCompleto from "../assets/PersonalCompleto.jpg";
 import NefrogemFrente from "../assets/NEOFROGEN-002.jpg";
 import NefrogemInterior from "../assets/NEOFROGEN-003.jpg";
+import NefogenAdm from "../assets/carrusel-inicio-1.jpg";
+import Nefrogen2 from "../assets/carrusel-inicio-2.jpg";
+import Nefrogen3 from "../assets/carrusel-inicio3.jpg";
+
 
 function CustomCarousel() {
   return (
     <Carousel fade interval={5000}>
+
       <Carousel.Item>
         <div
           className="carousel-fullwidth"
@@ -19,6 +24,31 @@ function CustomCarousel() {
           que puede confiar</p>
         </Carousel.Caption>
       </Carousel.Item>
+
+      <Carousel.Item>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${Nefrogen2})` }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Confíe su salud a nuestros médicos</h3>
+          <p>Servicios médicos en los
+          que puede confiar</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${Nefrogen3})` }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Confíe su salud a nuestros médicos</h3>
+          <p>Servicios médicos en los
+          que puede confiar</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
       <Carousel.Item>
         <div
           className="carousel-fullwidth"
@@ -30,6 +60,7 @@ function CustomCarousel() {
           Futuro, Hoy</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <div
           className="carousel-fullwidth"
@@ -41,6 +72,19 @@ function CustomCarousel() {
           De Lunes a Viernes.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
+      <Carousel.Item>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${NefogenAdm})` }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Estamos para atenderlos</h3>
+          <p>Atención continuada
+          De Lunes a Viernes.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
     </Carousel>
   );
 }

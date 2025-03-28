@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../css/Header.css';
 import Logo2 from "../assets/NefroGenLogoGris.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMessage, faCalendar } from '@fortawesome/free-regular-svg-icons';
+import { faMessage, faCalendar, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -60,13 +60,23 @@ function Header() {
             ))}
           </Nav>
           <Nav>
-            <Nav.Link as={Link} to="/contacto" onClick={handleNavClick}>
-              <FontAwesomeIcon icon={faMessage} style={{ marginRight: '5px' }} />
-              Contacto
+            <Nav.Link as={Link} to="/equipo-nefrogen" onClick={handleNavClick} className="btn-header">
+              <span>
+                <FontAwesomeIcon icon={faUsers} style={{ marginRight: '5px' }} />
+                Equipo Nefrogen
+              </span>
             </Nav.Link>
-            <Nav.Link as={Link} to="/turnos" onClick={handleNavClick}>
-              <FontAwesomeIcon icon={faCalendar} style={{ marginRight: '5px' }} />
-              Turnos
+            <Nav.Link as={Link} to="/contacto" onClick={handleNavClick} className="btn-header">
+              <span>
+                <FontAwesomeIcon icon={faMessage} style={{ marginRight: '5px' }} />
+                Contacto
+              </span>
+            </Nav.Link>
+            <Nav.Link as={Link} to="/turnos" onClick={handleNavClick} className="btn-header">
+              <span>
+                <FontAwesomeIcon icon={faCalendar} style={{ marginRight: '5px' }} />
+                Turnos
+              </span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
