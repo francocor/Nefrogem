@@ -7,6 +7,7 @@ import NefrogemInterior from "../assets/NEOFROGEN-003.jpg";
 import NefogenAdm from "../assets/carrusel-inicio-1.jpg";
 import Nefrogen2 from "../assets/carrusel-inicio-2.jpg";
 import Nefrogen3 from "../assets/carrusel-inicio3.jpg";
+import Nefrogen4 from "../assets/carrusel-inicio-4.jpg"
 
 
 function CustomCarousel() {
@@ -41,6 +42,17 @@ function CustomCarousel() {
         <div
           className="carousel-fullwidth"
           style={{ backgroundImage: `url(${Nefrogen3})` }}
+        ></div>
+        <Carousel.Caption>
+          <h3>Confíe su salud a nuestros médicos</h3>
+          <p>Servicios médicos en los
+          que puede confiar</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <div
+          className="carousel-fullwidth"
+          style={{ backgroundImage: `url(${Nefrogen4})` }}
         ></div>
         <Carousel.Caption>
           <h3>Confíe su salud a nuestros médicos</h3>

@@ -41,7 +41,14 @@
   border-radius: 8px;
   display: block;
 }
-
+.staff-item img.image-custom {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 8px;
+  display: block;
+}
 .staff-item h3 {
   margin-top: 10px !important;
 }

@@ -13,14 +13,14 @@ function Home() {
       <Acerca />
       <Staff />
       <Departments />
-      <div className="row">
+      {/* <div className="row">
         <div className="col-md-6">
           <Testimonials />
         </div>
         <div className="col-md-6">
           <Location />
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

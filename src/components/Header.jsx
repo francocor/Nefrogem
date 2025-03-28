@@ -34,8 +34,8 @@ function Header() {
     { id: 'acerca', label: 'Acerca' },
     { id: 'staff', label: 'Staff' },
     { id: 'departments', label: 'Departamentos' },
-    { id: 'testimonials', label: 'Testimonios' },
-    { id: 'location', label: 'Ubicación' },
+    // { id: 'testimonials', label: 'Testimonios' },
+    // { id: 'location', label: 'Ubicación' },
   ];
 
   return (
@@ -63,7 +63,7 @@ function Header() {
             <Nav.Link as={Link} to="/equipo-nefrogen" onClick={handleNavClick} className="btn-header">
               <span>
                 <FontAwesomeIcon icon={faUsers} style={{ marginRight: '5px' }} />
-                Equipo Nefrogen
+                Personal  
               </span>
             </Nav.Link>
             <Nav.Link as={Link} to="/contacto" onClick={handleNavClick} className="btn-header">

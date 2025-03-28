@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef }  from 'react';
 import '../css/departments.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSyringe, faUserNurse, faBrain, faAppleAlt } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +6,11 @@ import { GiKidneys } from 'react-icons/gi';
 import dptoEnfermeria from "../assets/dpto-enfermeria.jpg";
 import dptoHemodialisis from "../assets/dpto-hemodialisis1.jpg";
 import dptoPsicologia from "../assets/dpto-psicologia.jpg";
-import dptoNefrologia from "../assets/carrusel-inicio-4.jpg";
+import dptoNefrologia from "../assets/nefrologia.jpg";
+import dptoNutricion from "../assets/Nutricion.jpg"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function Departments() {
   const departments = [
@@ -14,7 +18,7 @@ function Departments() {
       id: 1,
       title: "Nefrología",
       description: "Descripción del departamento de Nefrología.",
-      image: dptoNefrologia, // Se usa la imagen real
+      image: dptoNefrologia,
       icon: GiKidneys,
       iconType: 'react'
     },
@@ -30,7 +34,7 @@ function Departments() {
       id: 3,
       title: "Nutrición",
       description: "Descripción del departamento de Nutrición.",
-      image: "https://via.placeholder.com/400x300?text=Nutricion",
+      image: dptoNutricion,
       icon: faAppleAlt,
       iconType: 'fa'
     },
@@ -51,13 +55,40 @@ function Departments() {
       iconType: 'fa'
     },
   ];
+  const sliderRef = useRef(null);
+  const settings = {
+    infinite: true,
+    speed: 6000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    arrows: false,
+    pauseOnHover: false
+  };
+  const handleCardClick = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPause();
+      console.log("Slider pausado");
+  
+      // Reanudar después de 5 segundos
+      setTimeout(() => {
+        sliderRef.current?.slickPlay();
+        console.log("Slider reanudado");
+      }, 5000);
+    }
+  };
 
   return (
     <section className="departments" id="departments">
       <h2>Departamentos</h2>
-      <div className="departments-grid">
+      <Slider ref={sliderRef}
+      
+      {...settings}>
         {departments.map((dept) => (
-          <div key={dept.id} className="department-card">
+          <div key={dept.id} onClick={handleCardClick} className="slider-item">
+<div  className="department-card">
             <div
               className="card-image"
               style={{ backgroundImage: `url(${dept.image})` }}
@@ -82,8 +113,10 @@ function Departments() {
               <p>Más información próximamente</p>
             </div>
           </div>
+          </div>
+          
         ))}
-      </div>
+      </Slider>
     </section>
   );
 }

@@ -42,7 +42,13 @@ function Staff() {
         <div className="slider-track">
           {staffMembers.map((member, index) => (
             <div key={index} className="staff-item">
-              <img src={member.image} alt={member.name} className="image-placeholder" />
+              <img src={member.image}
+  alt={member.name}
+  className={
+    member.name === "Luciana Martinez" || member.name === "Lic. Claudia Manzanares"
+      ? "image-custom"
+      : "image-placeholder"
+  } />
               <h3>{member.name}</h3>
               <p>{member.description}</p>
             </div>
@@ -50,7 +56,13 @@ function Staff() {
           
           {staffMembers.map((member, index) => (
             <div key={index + staffMembers.length} className="staff-item">
-              <img src={member.image} alt={member.name} className="image-placeholder" />
+              <img src={member.image}
+  alt={member.name}
+  className={
+    member.name === "Luciana Martinez" || member.name === "Lic. Claudia Manzanares"
+      ? "image-custom"
+      : "image-placeholder"
+  }/>
               <h3>{member.name}</h3>
               <p>{member.description}</p>
             </div>
