@@ -20,7 +20,7 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${NefrogemFrente})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Confíe su salud a nuestros médicos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Servicios médicos en los
           que puede confiar</p>
         </Carousel.Caption>
@@ -32,7 +32,7 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${Nefrogen2})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Confíe su salud a nuestros médicos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Servicios médicos en los
           que puede confiar</p>
         </Carousel.Caption>
@@ -44,18 +44,19 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${Nefrogen3})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Confíe su salud a nuestros médicos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Servicios médicos en los
           que puede confiar</p>
         </Carousel.Caption>
       </Carousel.Item>
+
       <Carousel.Item>
         <div
           className="carousel-fullwidth"
           style={{ backgroundImage: `url(${Nefrogen4})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Confíe su salud a nuestros médicos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Servicios médicos en los
           que puede confiar</p>
         </Carousel.Caption>
@@ -67,7 +68,7 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${PersonalCompleto})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Confie su salud a nuestros medicos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>La Nefrología del
           Futuro, Hoy</p>
         </Carousel.Caption>
@@ -79,7 +80,7 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${NefrogemInterior})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Estamos para atenderlos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Atención continuada
           De Lunes a Viernes.</p>
         </Carousel.Caption>
@@ -91,7 +92,7 @@ function CustomCarousel() {
           style={{ backgroundImage: `url(${NefogenAdm})` }}
         ></div>
         <Carousel.Caption>
-          <h3>Estamos para atenderlos</h3>
+          <h3>Nuestra prioridad son los pacientes</h3>
           <p>Atención continuada
           De Lunes a Viernes.</p>
         </Carousel.Caption>

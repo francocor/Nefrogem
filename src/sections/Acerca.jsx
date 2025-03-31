@@ -9,7 +9,7 @@ function Acerca() {
         <div className="acerca-card">
           <h3>Historia</h3>
           <p>
-            Con más de X años de experiencia, nuestro centro médico nació para brindar una atención integral y de calidad, evolucionando siempre para responder a las necesidades de la comunidad.
+            Con más de 5 años de experiencia, nuestro centro médico nació para brindar una atención integral y de calidad, evolucionando siempre para responder a las necesidades de la comunidad.
           </p>
         </div>
         <div className="acerca-card">

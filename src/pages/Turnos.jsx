@@ -40,8 +40,8 @@ function Turnos() {
       title: 'Turno solicitado',
       text: 'Tu solicitud fue enviada correctamente. Nos pondremos en contacto por WhatsApp.',
     }).then(() => {
-      
-      const whatsappNumber = 'NUMERO_DEL_CENTRO'; 
+      // Formateamos el número para WhatsApp (sin "+" ni espacios)
+      const whatsappNumber = '543815996586';
       const whatsappMessage = `Hola, solicito turno con ${selectedProfessional}. Mi nombre es ${nombre} y mi teléfono es ${telefono}.`;
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappUrl, '_blank');
@@ -59,7 +59,7 @@ function Turnos() {
 
   return (
     <main className="turnos">
-      <h2 className='tituloturno'>Turnos</h2>
+      <h2 className="tituloturno">Turnos</h2>
       <form className="turnos-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Seleccione al Profesional:</label>
@@ -67,7 +67,7 @@ function Turnos() {
             value={selectedProfessional}
             onChange={(e) => setSelectedProfessional(e.target.value)}
           >
-            <option value="">-- Seleccione el profesional--</option>
+            <option value="">-- Seleccione el profesional --</option>
             <option value="Dr. Profesional">Dr. Profesional</option>
             <option value="Dra. Ejemplo">Dra. Ejemplo</option>
           </select>
@@ -123,7 +123,7 @@ function Turnos() {
           {turnoEnviado ? 'Turno Solicitado' : 'Solicitar Turno'}
         </button>
       </form>
-      <p className="note">Este formulario se enviará al WP del centro para su confirmación.</p>
+      <p className="note">Este formulario se enviará al WhatsApp del centro para su confirmación.</p>
     </main>
   );
 }

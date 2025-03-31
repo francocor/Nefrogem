@@ -20,6 +20,7 @@ function Departments() {
     {
       id: 1,
       title: "Nefrología",
+      description: "Expertos en diagnóstico y tratamiento de enfermedades renales. Seguimiento integral y terapias especializadas para cuidar la función renal.",
       image: dptoNefrologia,
       icon: GiKidneys,
       iconType: 'react'
@@ -27,6 +28,7 @@ function Departments() {
     {
       id: 2,
       title: "Hemodiálisis",
+      description: "Unidad dedicada a la terapia de hemodiálisis, con tecnología avanzada y atención personalizada para pacientes con insuficiencia renal.",
       image: dptoHemodialisis,
       icon: faSyringe,
       iconType: 'fa'
@@ -34,6 +36,7 @@ function Departments() {
     {
       id: 3,
       title: "Nutrición",
+      description: "Profesionales que diseñan planes alimenticios personalizados para promover la salud, prevenir enfermedades y optimizar el bienestar nutricional.",
       image: dptoNutricion,
       icon: faAppleAlt,
       iconType: 'fa'
@@ -41,6 +44,7 @@ function Departments() {
     {
       id: 4,
       title: "Psicología",
+      description: "Servicio de apoyo emocional y terapias individuales y grupales, enfocado en mejorar la salud mental y el bienestar psicológico.",
       image: dptoPsicologia,
       icon: faBrain,
       iconType: 'fa'
@@ -48,6 +52,7 @@ function Departments() {
     {
       id: 5,
       title: "Enfermería",
+      description: "Equipo de enfermería comprometido con la atención integral, brindando cuidado especializado y acompañamiento en cada etapa del tratamiento.",
       image: dptoEnfermeria,
       icon: faUserNurse,
       iconType: 'fa'
@@ -59,12 +64,12 @@ function Departments() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,  // cada 3s avanza
-    speed: 600,          // velocidad del desplazamiento
-    slidesToShow: 3,     // 3 tarjetas en escritorio
+    speed: 600,           // velocidad del desplazamiento
+    slidesToShow: 3,      // 3 tarjetas en escritorio
     slidesToScroll: 1,
     pauseOnHover: false,
     pauseOnFocus: false,
-    arrows: false,       // oculta flechas
+    arrows: false,        // oculta flechas
     responsive: [
       {
         breakpoint: 1024,
@@ -86,7 +91,6 @@ function Departments() {
     if (!isPaused) {
       setIsPaused(true);
       sliderRef.current.slickPause();
-
       // Reanudar después de 5 segundos
       setTimeout(() => {
         setIsPaused(false);
@@ -123,7 +127,7 @@ function Departments() {
                 </div>
               </div>
               <div className="card-overlay">
-                <p>Más información próximamente</p>
+                <p>{dept.description}</p>
               </div>
             </div>
           </div>

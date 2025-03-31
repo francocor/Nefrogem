@@ -44,7 +44,7 @@ function Contact() {
       text: 'Gracias por contactarnos. Te responderemos pronto.',
     }).then(() => {
       // Construir el mensaje predeterminado para WhatsApp
-      const whatsappNumber = 'NUMERO_DEL_CENTRO'; // Reemplaza este valor con el número real
+      const whatsappNumber = '543815996586'; // Reemplaza este valor con el número real
       const whatsappMessage = `Hola, tengo un mensaje de contacto. Mi nombre es ${nombre}, mi teléfono es ${telefono}, mi email es ${email} y mi mensaje es: ${mensaje}`;
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappUrl, '_blank');
