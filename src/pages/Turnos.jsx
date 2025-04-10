@@ -68,16 +68,16 @@ function Turnos() {
             onChange={(e) => setSelectedProfessional(e.target.value)}
           >
             <option value="">-- Seleccione el profesional --</option>
-            <option value="Dr. Profesional">Dr. Profesional</option>
-            <option value="Dra. Ejemplo">Dra. Ejemplo</option>
+            <option value="Dr. Martin Choua">Dr. Martin Choua</option>
+            <option value="Dra. Luján Sosa">Dra. Luján Sosa</option>
           </select>
         </div>
         {selectedProfessional && (
           <div className="availability">
             <p>Días y Horas Disponibles:</p>
             <div className="schedule">
-              <span>Lunes 10:00 - 14:00</span>
-              <span>Miércoles 15:00 - 19:00</span>
+              <span>Lunes 08:00 - 20:00 a </span>
+              <span>Viernes 08:00 - 20:00</span>
             </div>
           </div>
         )}

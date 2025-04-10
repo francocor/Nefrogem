@@ -1,4 +1,5 @@
 import "../css/equiponefrogen.css";
+import martin from "../assets/ChouaMartin.png"
 import ariasMaria from "../assets/ARIASMARIADELVALLE.jpg";
 import barrazajairo from "../assets/BARRAZAJAIRO.jpg";
 import capardocarlos from "../assets/CAPARDOCARLOS.jpg";
@@ -17,44 +18,51 @@ import rivadeneirasabrina from "../assets/RIVADENEIRASABRINA.jpg";
 import rodriguezbelen from "../assets/RODRIGUEZBELEN.jpg";
 import rojascarla from "../assets/ROJASCARLA.jpg";
 import sosalujan from "../assets/SosaLujan.jpg";
+import lauracarro from "../assets/LauraCarro.jpg";
+import lilibeth from "../assets/LilibethCantos.png";
+import claudiamanzanares from "../assets/claudiamanzanares.jpg";
 
 const sections = [
   {
     title: "Médicos",
     members: [
-      { image: capardocarlos, name: "Carlos Capardo", description: "Nefrólogo" },
-      { image: jaimematias, name: "Matías Jaime", description: "Médico Clínico" },
-      { image: chasampifederico, name: "Federico Chasampi", description: "Médico Clínico" },
+      { image: martin, name: "Dr.Martín Choua", description: "Nefrólogo - Director Médico" },
+      { image: sosalujan, name: "Dra.Luján Sosa", description: "Coordinadora Medica" },
+      { image: capardocarlos, name: "Dr.Carlos Capardo", description: "Médico Clínico" },
+      { image: monterosmariajose, name: "María José Monteros", description: "Staff Medico" },
+      { image: orsojosefina, name: "Josefina Orso", description: "Staff Medico" },
+    ],
+  },
+  {
+    title: "Trabajo Social, Psicología y Nutricion",
+    members: [
+      { image: claudiamanzanares, name: "Claudia Manzanares", description: "Trabajadora Social", online: true },
+      { image: martinezluciana, name: "Luciana Martínez", description: "Psicóloga", online: true },
+      { image: lauracarro, name: "Laura Carro", description: "Psicóloga" },
+      { image: quirogamariaemilia, name: "María Emilia Quiroga", description: "Nutricionista", online: true },
     ],
   },
   {
     title: "Enfermería",
     members: [
+      { image: cordobavanessa, name: "Vanessa Córdoba", description: "Jefa de Enfermería" },
+      { image: castroyesica, name: "Yesica Castro", description: "Coordinadora de Enfermería" },
+      { image: jaimematias, name: "Matías Jaime", description: "Enfermero" },
+      { image: chasampifederico, name: "Federico Chasampi", description: "Enfermero" },
       { image: ariasMaria, name: "María del Valle Arias", description: "Enfermera" },
       { image: barrazajairo, name: "Jairo Barraza", description: "Enfermero" },
-      { image: castroyesica, name: "Yesica Castro", description: "Enfermera" },
       { image: galindezbrenda, name: "Brenda Galíndez", description: "Enfermera" },
-      { image: sosalujan, name: "Luján Sosa", description: "Enfermera" },
+      { image: rivadeneirasabrina, name: "Sabrina Rivadeneira", description: "Enfermera" },
+      { image: rodriguezbelen, name: "Belén Rodríguez", description: "Enfermera" },
+      { image: rojascarla, name: "Carla Rojas", description: "Enfermera" },
+      { image: medinarocio, name: "Rocío Medina", description: "Enfermera" },
+      { image: jabalollasanapaula, name: "Paula Jabalolla", description: "Enfermera" },
     ],
   },
   {
-    title: "Administración y Apoyo",
+    title: "Administración",
     members: [
-      
-      { image: rivadeneirasabrina, name: "Sabrina Rivadeneira", description: "Administración" },
-      { image: rodriguezbelen, name: "Belén Rodríguez", description: "Recepción" },
-      { image: rojascarla, name: "Carla Rojas", description: "Recepción" },
-    ],
-  },
-  {
-    title: "Equipo de Trabajo Social y Psicología",
-    members: [
-      { image: orsojosefina, name: "Josefina Orso", description: "Psicóloga" },
-      { image: quirogamariaemilia, name: "María Emilia Quiroga", description: "Nutricionista" },
-      { image: monterosmariajose, name: "María José Monteros", description: "Trabajadora Social" },
-      { image: medinarocio, name: "Rocío Medina", description: "Asistente Social" },
-      { image: jabalollasanapaula, name: "Paula Jabalolla", description: "Asistente Terapéutica" },
-      { image: martinezluciana, name: "Luciana Martínez", description: "Psicóloga" },
+      { image: lilibeth, name: "Lilibeth Cantos", description: "Jefa de Administración" },
     ],
   },
 ];
@@ -74,6 +82,12 @@ function EquipoNefrogen() {
                 <img src={member.image} alt={member.name} />
                 <h3>{member.name}</h3>
                 <p>{member.description}</p>
+
+                {member.online && (
+                  <p style={{ marginTop: '8px', color: '#40717E', fontWeight: 'bold', fontSize: '0.95rem' }}>
+                    🖥️ Consultas online
+                  </p>
+                )}
               </div>
             ))}
           </div>

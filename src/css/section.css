@@ -19,12 +19,30 @@
 
 .slider-track {
   display: flex;
-  animation: scroll 40s linear infinite; /* velocidad ajustada */
+  width: max-content; /* esto es CLAVE */
+  animation: scroll-marquee 80s linear infinite;
 }
 
-@keyframes scroll {
+@keyframes scroll-marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* se anima hasta la mitad duplicada */
+  100% { transform: translateX(-50%); }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 768px) {
+  .slider-track {
+    animation: none; /* Quitamos animación */
+    width: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .staff-item {
+    scroll-snap-align: center;
+    min-width: 250px; /* Cards más chicas en mobile */
+    margin-right: 15px;
+  }
 }
 
 /* Tarjetas del staff */
@@ -37,12 +55,12 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .staff-item img {
   width: 100%;
-  height: 320px; /* mayor altura para evitar recorte de cara/cuerpo */
+  height: 320px;
   object-fit: cover;
   object-position: top center;
   border-radius: 8px;

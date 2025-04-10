@@ -20,12 +20,16 @@ import rivadeneirasabrina from "../assets/RIVADENEIRASABRINA.jpg";
 import rodriguezbelen from "../assets/RODRIGUEZBELEN.jpg";
 import rojascarla from "../assets/ROJASCARLA.jpg";
 import sosalujan from "../assets/SosaLujan.jpg";
+import lauracarro from "../assets/LauraCarro.jpg";
+import lilibeth from "../assets/LilibethCantos.png";
+import claudiamanzanares from "../assets/claudiamanzanares.jpg";
+import vanesacordoba from "../assets/CORDOBAVANESSA.jpg";
 
 function Staff() {
   const staffMembers = [
     {
       image: martin,
-      name: "Dr. Choua Martin",
+      name: "Dr.Martin Choua",
       description: "Nefrólogo - Director Médico"
     },
     {
@@ -36,12 +40,12 @@ function Staff() {
     {
       image: orsojosefina,
       name: "Josefina Orso",
-      description: "Psicóloga"
+      description: "Staff Medico"
     },
     {
       image: monterosmariajose,
       name: "María José Monteros",
-      description: "Trabajadora Social"
+      description: "Staff Medico"
     },
     {
       image: martinezluciana,
@@ -59,9 +63,29 @@ function Staff() {
       description: "Enfermero"
     },
     {
+      image: vanesacordoba,
+      name: "Vanesa Córdoba",
+      description: "Jefa de enfermeria"
+    },
+    {
+      image: sosalujan,
+      name: "Luján Sosa",
+      description: "Coordinadora Medica"
+    },
+    {
+      image: claudiamanzanares,
+      name: "Claudia Manzanares",
+      description: "Trabajadora Social"
+    },
+    {
+      image: lilibeth,
+      name: "Lilibeth Cantos",
+      description: "Jefa de Administracion"
+    },
+    {
       image: castroyesica,
       name: "Yesica Castro",
-      description: "Enfermera"
+      description: "Coordinadora de Enfermeria"
     },
     {
       image: galindezbrenda,
@@ -71,52 +95,67 @@ function Staff() {
     {
       image: sosalujan,
       name: "Luján Sosa",
-      description: "Enfermera"
+      description: "Coordinadora Medica"
     },
     {
       image: capardocarlos,
       name: "Carlos Capardo",
-      description: "Nefrólogo"
+      description: "Medico Clinico"
     },
     {
       image: jaimematias,
       name: "Matías Jaime",
-      description: "Clínico"
+      description: "Enfermero"
     },
     {
       image: chasampifederico,
       name: "Federico Chasampi",
-      description: "Clínico"
+      description: "Enfermero"
     },
     {
       image: rivadeneirasabrina,
       name: "Sabrina Rivadeneira",
-      description: "Administración"
+      description: "Enfermera"
     },
     {
       image: rodriguezbelen,
       name: "Belén Rodríguez",
-      description: "Recepción"
+      description: "Enfermera"
     },
     {
       image: rojascarla,
       name: "Carla Rojas",
-      description: "Recepción"
+      description: "Enfermera"
     },
     {
       image: medinarocio,
       name: "Rocío Medina",
-      description: "Asistente Social"
+      description: "Enfermera"
     },
     {
       image: cordobavanessa,
       name: "Vanessa Cordoba",
-      description: "Recepción"
+      description: "Jefa de Enfermeria"
     },
     {
       image: jabalollasanapaula,
       name: "Paula Jabalolla",
-      description: "Terapéutica"
+      description: "Enfermera"
+    },
+    {
+      image: lauracarro,
+      name: "Laura Carro",
+      description: "Psicóloga"
+    },
+    {
+      image: lilibeth,
+      name: "Lilibeth Cantos",
+      description: "Jefa de Administracion"
+    },
+    {
+      image: claudiamanzanares,
+      name: "Claudia Manzanares",
+      description: "Lic.Trabajo Social"
     }
   ];
 
