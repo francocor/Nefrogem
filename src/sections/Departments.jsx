@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSyringe, faUserNurse, faBrain, faAppleAlt } from '@fortawesome/free-solid-svg-icons';
 import { GiKidneys } from 'react-icons/gi';
 
-import dptoEnfermeria from "../assets/dpto-enfermeria.jpg";
-import dptoHemodialisis from "../assets/dpto-hemodialisis1.jpg";
-import dptoPsicologia from "../assets/dpto-psicologia.jpg";
-import dptoNefrologia from "../assets/nefrologia.jpg";
-import dptoNutricion from "../assets/Nutricion.jpg";
+import dptoEnfermeria from "../assets/dpto-enfermeria.webp";
+import dptoHemodialisis from "../assets/dpto-hemodialisis1.webp";
+import dptoPsicologia from "../assets/dpto-psicologia.webp";
+import dptoNefrologia from "../assets/nefrologia.webp";
+import dptoNutricion from "../assets/nutricion.webp";
 
 function Departments() {
   const sliderRef = useRef(null);

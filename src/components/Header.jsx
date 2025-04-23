@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../css/Header.css';
-import Logo2 from "../assets/NefroGenLogoGris.png";
+import Logo2 from "../assets/nefrogenlogogris.webp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage, faCalendar, faUsers } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import '../css/CustomCarousel.css';
-import PersonalCompleto from "../assets/PersonalCompleto.jpg";
-import NefrogemFrente from "../assets/NEOFROGEN-002.jpg";
-import NefrogemInterior from "../assets/NEOFROGEN-003.jpg";
-import NefogenAdm from "../assets/carrusel-inicio-1.jpg";
-import Nefrogen2 from "../assets/carrusel-inicio-2.jpg";
-import Nefrogen3 from "../assets/carrusel-inicio3.jpg";
-import Nefrogen4 from "../assets/carrusel-inicio-4.jpg"
+import PersonalCompleto from "../assets/personalcompleto.webp";
+import NefrogemFrente from "../assets/neofrogen-002.webp";
+import NefrogemInterior from "../assets/neofrogen-003.webp";
+import NefogenAdm from "../assets/carrusel-inicio-1.webp";
+import Nefrogen2 from "../assets/carrusel-inicio-2.webp";
+import Nefrogen3 from "../assets/carrusel-inicio3.webp";
+import Nefrogen4 from "../assets/carrusel-inicio-4.webp";
 
 
 function CustomCarousel() {
