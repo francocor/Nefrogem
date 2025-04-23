@@ -38,7 +38,7 @@ const sections = [
     members: [
       { image: claudiamanzanares, name: "Claudia Manzanares", description: "Trabajadora Social", online: true },
       { image: martinezluciana, name: "Luciana Martínez", description: "Psicóloga", online: true },
-      { image: lauracarro, name: "Laura Carro", description: "Psicóloga" },
+      { image: lauracarro, name: "Laura Carro", description: "Nutricionista", online: true },
       { image: quirogamariaemilia, name: "María Emilia Quiroga", description: "Nutricionista", online: true },
     ],
   },
