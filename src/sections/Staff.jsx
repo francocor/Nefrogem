@@ -29,7 +29,7 @@ function Staff() {
   const staffMembers = [
     {
       image: martin,
-      name: "Dr.Martin Choua",
+      name: "Dr. Martin Choua",
       description: "Nefrólogo - Director Médico"
     },
     {
@@ -145,7 +145,7 @@ function Staff() {
     {
       image: lauracarro,
       name: "Laura Carro",
-      description: "Psicóloga"
+      description: "Nutricionista"
     },
     {
       image: lilibeth,
