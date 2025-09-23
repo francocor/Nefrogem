@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import '../css/Header.css';
 import Logo2 from "../assets/nefrogenlogogris.webp";
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMessage, faCalendar, faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faMessage, faCalendar, faUsers, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -34,8 +34,6 @@ function Header() {
     { id: 'acerca', label: 'Acerca' },
     { id: 'staff', label: 'Staff' },
     { id: 'departments', label: 'Departamentos' },
-    // { id: 'testimonials', label: 'Testimonios' },
-    // { id: 'location', label: 'Ubicación' },
   ];
 
   return (
@@ -76,6 +74,19 @@ function Header() {
               <span>
                 <FontAwesomeIcon icon={faCalendar} style={{ marginRight: '5px' }} />
                 Turnos
+              </span>
+            </Nav.Link>
+
+            {/* Nuevo botón externo */}
+            <Nav.Link
+              href="https://nefrogentordo.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-header"
+            >
+              <span>
+                <FontAwesomeIcon icon={faRightToBracket} style={{ marginRight: '5px' }} />
+                App Nefrogen
               </span>
             </Nav.Link>
           </Nav>
