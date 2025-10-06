@@ -1,29 +1,31 @@
 import React from 'react';
 import '../css/section.css';
 
-import martin from "../assets/chouamartin.webp";
-import ariasMaria from "../assets/ariasmariadelvalle.webp";
-import barrazajairo from "../assets/barrazajairo.webp";
-import capardocarlos from "../assets/capardocarlos.webp";
-import castroyesica from "../assets/castroyesica.webp";
-import chasampifederico from "../assets/chasampifederico.webp";
-import cordobavanessa from "../assets/cordobavanessa.webp";
-import galindezbrenda from "../assets/galindezbrenda.webp";
-import jabalollasanapaula from "../assets/jabalollasanapaula.webp";
-import jaimematias from "../assets/jaimematias.webp";
-import martinezluciana from "../assets/martinezluciana.webp";
-import medinarocio from "../assets/medinarocio.webp";
-import monterosmariajose from "../assets/monterosmariajose.webp";
-import orsojosefina from "../assets/orsojosefina.webp";
-import quirogamariaemilia from "../assets/quirogamariaemilia.webp";
-import rivadeneirasabrina from "../assets/rivadeneirasabrina.webp";
-import rodriguezbelen from "../assets/rodriguezbelen.webp";
-import rojascarla from "../assets/rojascarla.webp";
-import sosalujan from "../assets/sosalujan.webp";
-import lauracarro from "../assets/lauracarro.webp";
-import lilibeth from "../assets/lilibethcantos.webp";
-import claudiamanzanares from "../assets/claudiamanzanares.webp";
-import vanesacordoba from "../assets/cordobavanessa.webp";
+import martin from "../assets/DR. MARTINCHOUA-NEFROLOGOYDIRECTORMEDICO.jpg";
+import emmamuller from "../assets/DRA.EMMAMULLER-NEFROLOGA.jpg"
+import orsojosefina from "../assets/DRA.JOSEFINAORSO-COORDINACIONSTAFFMEDICO.jpg";
+import gustavolobo from "../assets/DR.GUSTAVOLOBO-CIRUJANOGENERALESPECIALISTAENLAPAROSCOPÍA.jpg";
+import sosalujan from "../assets/DRA.LUJANSOSA-STAFFMEDICO.jpg";
+import capardocarlos from "../assets/DR.CARLOSCAPARDO-STAFFMEDICO.jpg";
+import monterosmariajose from "../assets/DRA.MARIAJOSEMONTEROS-STAFFMEDICO.jpg";
+import claudiamanzanares from "../assets/CLAUDIAMANZANAREZ-LIC.ENTRABAJOSOCIAL.png";
+import martinezluciana from "../assets/LUCIANAMARTINEZ-LIC.ENPSICOLOGIA.jpg";
+import lauracarro from "../assets/LAURACARRO-LIC.ENNUTRICIÓN.jpg";
+import emiliaquiroga from "../assets/EMILIA QUIROGA-LIC.ENNUTRICIONYCOORDINADORAINTERDISCIPLINRIA.jpg";
+import cordobavanessa from "../assets/CORDOBAVANESSA-ENFERMERAUNIVERSITARIA.jpg";
+import castroyesica from "../assets/YESICACASTRO-ENFERMERAUNIVERSITARIA.jpg";
+import jaimematias from "../assets/JAIMEMATIAS-ENFERMEROPROFESIONAL.jpg";
+import mariaarias from "../assets/MARIAARIAS-ENFERMERAPROFESIONAL.jpg";
+import barrazajairo from "../assets/BARRAZAJAIRO-ENFERMEROPROFESIONAL.jpg";
+import galindezbrenda from "../assets/BRENDAGALINDEZ-ENFERMERAPROFESIONAL.jpg";
+import rivadeneirasabrina from "../assets/SABRINARIVADENEIRA-ENFERMERAPROFESIONAL.jpg";
+import rodriguezbelen from "../assets/RODRIGUEZMARIABELEN.jpg";
+import rojascarla from "../assets/CARLAROJAS-ENFERMERAPROFESIONAL.jpg";
+import medinarocio from "../assets/MEDINAROCIO-ENFERMERAPROFESIONAL.jpg";
+import jabalollasanapaula from "../assets/ANAPAULAJABALOLLAS-ENFERMERAPROFESIONAL.jpg";
+import fatimacastillo from "../assets/FÁTIMACASTILLO-ENFERMERAPROFESIONAL.jpg";
+import sofiamaciel from "../assets/SOFIAMACIEL-ENFERMERAPROFESIONAL.jpg";
+import lilibeth from "../assets/LILIBETHCANTOS-SECRETARIAADMINISTRATIVA.jpg";
 
 function Staff() {
   const staffMembers = [
@@ -33,14 +35,19 @@ function Staff() {
       description: "Nefrólogo - Director Médico"
     },
     {
-      image: quirogamariaemilia,
+      image: emiliaquiroga,
       name: "Emilia Quiroga",
-      description: "Nutricionista"
+      description: " Lic. en Nutricion"
     },
     {
       image: orsojosefina,
       name: "Josefina Orso",
       description: "Staff Medico"
+    },
+    {
+      image: emmamuller,
+      name: "Dra. Emma Muller",
+      description: "Nefróloga"
     },
     {
       image: monterosmariajose,
@@ -53,17 +60,12 @@ function Staff() {
       description: "Psicóloga"
     },
     {
-      image: ariasMaria,
-      name: "María del Valle Arias",
-      description: "Enfermera"
-    },
-    {
       image: barrazajairo,
       name: "Jairo Barraza",
-      description: "Enfermero"
+      description: "Enfermero Profesional"
     },
     {
-      image: vanesacordoba,
+      image: cordobavanessa,
       name: "Vanesa Córdoba",
       description: "Jefa de enfermeria"
     },
@@ -75,7 +77,7 @@ function Staff() {
     {
       image: claudiamanzanares,
       name: "Claudia Manzanares",
-      description: "Trabajadora Social"
+      description: "Lic. en Trabajo Social"
     },
     {
       image: lilibeth,
@@ -90,12 +92,7 @@ function Staff() {
     {
       image: galindezbrenda,
       name: "Brenda Galíndez",
-      description: "Enfermera"
-    },
-    {
-      image: sosalujan,
-      name: "Luján Sosa",
-      description: "Coordinadora Medica"
+      description: "Enfermera Profesional"
     },
     {
       image: capardocarlos,
@@ -105,57 +102,57 @@ function Staff() {
     {
       image: jaimematias,
       name: "Matías Jaime",
-      description: "Enfermero"
+      description: "Enfermero Profesional"
     },
     {
-      image: chasampifederico,
-      name: "Federico Chasampi",
-      description: "Enfermero"
+      image: gustavolobo,
+      name: "Dr. Gustavo Lobo",
+      description: "Cirujano"
     },
     {
       image: rivadeneirasabrina,
       name: "Sabrina Rivadeneira",
-      description: "Enfermera"
+      description: "Enfermera Profesional"
     },
     {
       image: rodriguezbelen,
       name: "Belén Rodríguez",
-      description: "Enfermera"
+      description: "Enfermera Profesional"
     },
     {
       image: rojascarla,
       name: "Carla Rojas",
-      description: "Enfermera"
+      description: "Enfermera Profesional"
     },
     {
       image: medinarocio,
       name: "Rocío Medina",
-      description: "Enfermera"
-    },
-    {
-      image: cordobavanessa,
-      name: "Vanessa Cordoba",
-      description: "Jefa de Enfermeria"
+      description: "Enfermera Profesional"
     },
     {
       image: jabalollasanapaula,
       name: "Paula Jabalolla",
-      description: "Enfermera"
+      description: "Enfermera Profesional"
     },
     {
       image: lauracarro,
       name: "Laura Carro",
-      description: "Nutricionista"
+      description: "Lic en Nutricion"
     },
     {
-      image: lilibeth,
-      name: "Lilibeth Cantos",
-      description: "Jefa de Administracion"
+      image: mariaarias,
+      name: "María del Valle Arias",
+      description: "Enfermera Profesional"
     },
     {
-      image: claudiamanzanares,
-      name: "Claudia Manzanares",
-      description: "Lic.Trabajo Social"
+      image: fatimacastillo,
+      name: "Fátima Castillo",
+      description: "Enfermera Profesional"
+    },
+    {
+      image: sofiamaciel,
+      name: "Sofía Maciel",
+      description: "Enfermera Profesional"
     }
   ];
 

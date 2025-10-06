@@ -1,12 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import '../css/CustomCarousel.css';
-import PersonalCompleto from "../assets/personalcompleto.webp";
+import PersonalCompleto from "../assets/FOTOEQUIPO.jpg";
 import NefrogemFrente from "../assets/neofrogen-002.webp";
 import NefrogemInterior from "../assets/neofrogen-003.webp";
-import NefogenAdm from "../assets/carrusel-inicio-1.webp";
-import Nefrogen2 from "../assets/carrusel-inicio-2.webp";
-import Nefrogen3 from "../assets/carrusel-inicio3.webp";
 import Nefrogen4 from "../assets/carrusel-inicio-4.webp";
 
 
@@ -29,36 +26,13 @@ function CustomCarousel() {
       <Carousel.Item>
         <div
           className="carousel-fullwidth"
-          style={{ backgroundImage: `url(${Nefrogen2})` }}
-        ></div>
-        <Carousel.Caption>
-          <h3>Nuestra prioridad son los pacientes</h3>
-          <p>Servicios médicos en los
-          que puede confiar</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div
-          className="carousel-fullwidth"
-          style={{ backgroundImage: `url(${Nefrogen3})` }}
-        ></div>
-        <Carousel.Caption>
-          <h3>Nuestra prioridad son los pacientes</h3>
-          <p>Servicios médicos en los
-          que puede confiar</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div
-          className="carousel-fullwidth"
           style={{ backgroundImage: `url(${Nefrogen4})` }}
         ></div>
         <Carousel.Caption>
           <h3>Nuestra prioridad son los pacientes</h3>
-          <p>Servicios médicos en los
-          que puede confiar</p>
+          <p>Clínica de hemodiálisis de Lunes a Sábado 
+            de 05:00 a 20:00
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -81,20 +55,9 @@ function CustomCarousel() {
         ></div>
         <Carousel.Caption>
           <h3>Nuestra prioridad son los pacientes</h3>
-          <p>Atención continuada
-          De Lunes a Viernes.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <div
-          className="carousel-fullwidth"
-          style={{ backgroundImage: `url(${NefogenAdm})` }}
-        ></div>
-        <Carousel.Caption>
-          <h3>Nuestra prioridad son los pacientes</h3>
-          <p>Atención continuada
-          De Lunes a Viernes.</p>
+          <p>Horario Administrativo de Lunes a Viernes de 
+            8:30 a 18:30 
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
 

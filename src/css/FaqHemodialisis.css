@@ -1,0 +1,160 @@
+/* ==============================
+   FAQ Hemodiálisis (RESPONSIVO)
+   ============================== */
+
+:root{
+  --brand: #2f6f76;    /* teal del sitio */
+  --ink-900:#1e1e1e;
+  --ink-800:#23272b;
+  --ink-700:#374151;
+  --ink-600:#4b5563;
+  --border:#e6e6e6;
+  --bg:#ffffff;        /* fondo blanco */
+}
+
+/* Sección */
+.faq.section{
+  background: var(--bg);
+  padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 24px);
+}
+
+/* Encabezado centrado */
+.faq-head{
+  max-width: 900px;
+  margin: 0 auto clamp(14px, 3vw, 24px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.faq-title{
+  margin:0;
+  color: var(--brand);
+  text-align:center;
+  font-weight: 600;
+  font-size: clamp(1.35rem, 1.05rem + 1.6vw, 2.05rem);
+  letter-spacing: .2px;
+}
+
+/* Lista contenedora */
+.faq-list{
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(8px, 1.2vw, 12px);
+}
+
+/* Ítem base */
+.faq-item{
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: box-shadow .25s ease, border-color .25s ease, transform .2s ease;
+  overflow: hidden; /* evita saltos en mobile al abrir/cerrar */
+}
+
+/* Estado abierto: elevación sutil */
+.faq-item[open]{
+  border-color: #cfe2e4;
+  box-shadow: 0 10px 22px rgba(47,111,118,0.10);
+  transform: translateY(-1px);
+}
+
+/* Pregunta (summary) */
+.faq-question{
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink-800);
+  padding: clamp(12px, 2.6vw, 16px) clamp(12px, 3vw, 18px);
+  padding-right: clamp(42px, 6vw, 56px); /* espacio para el ícono */
+  position: relative;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* mejora tap en mobile */
+  font-size: clamp(1rem, .95rem + .3vw, 1.05rem);
+  line-height: 1.35;
+}
+
+/* Quitar el triángulo nativo */
+.faq-question::-webkit-details-marker{ display:none; }
+.faq-question::marker{ content:""; }
+
+/* Ícono + / – */
+.faq-question::after{
+  content:"+";
+  position:absolute;
+  right: clamp(10px, 3vw, 16px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px; height: 24px;
+  display:grid; place-items:center;
+  border-radius:8px;
+  font-weight:700;
+  color: var(--brand);
+  background: #eaf3f3;
+}
+.faq-item[open] .faq-question::after{ content:"–"; }
+
+/* Respuesta */
+.faq-answer{
+  color: var(--ink-700);
+  line-height: 1.6;
+  padding: 0 clamp(12px, 3vw, 18px) clamp(12px, 3vw, 16px);
+  font-size: clamp(.98rem, .95rem + .2vw, 1.02rem);
+}
+
+/* Hover sólo en dispositivos con puntero (no molesta en touch) */
+@media (hover:hover){
+  .faq-item:hover{
+    border-color: #cfe2e4;
+    box-shadow: 0 10px 22px rgba(47,111,118,0.10);
+    transform: translateY(-1px);
+  }
+  .faq-question{
+    transition: background-color .2s ease, color .2s ease;
+    border-radius: 10px;
+  }
+  .faq-question:hover{
+    background: #f5fbfb;
+    color: var(--brand);
+  }
+  .faq-question::after{
+    transition: background-color .2s ease, color .2s ease, transform .2s ease;
+  }
+  .faq-question:hover::after{
+    background: #dceff0;
+    color: var(--brand);
+    transform: translateY(-50%) scale(1.05);
+  }
+}
+
+/* Estado activo (tap) */
+.faq-question:active{ background: #edf7f7; }
+.faq-item:active{ transform: translateY(0); }
+
+/* Foco accesible con teclado */
+.faq-item:focus-within{
+  outline: 2px solid #cfe2e4;
+  outline-offset: 2px;
+  border-radius: 16px;
+}
+
+/* Nota / disclaimer */
+.faq-disclaimer{
+  max-width: 900px;
+  margin: clamp(8px, 2vw, 14px) auto 0;
+  color: var(--ink-600);
+  font-size: .9rem;
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce){
+  .faq-item, .faq-question, .faq-question::after { transition: none !important; }
+}
+
+/* Ajustes finos para pantallas pequeñas */
+@media (max-width: 420px){
+  .faq-title{ font-size: 1.35rem; }
+  .faq-question{ font-size: 1rem; }
+  .faq-answer{ font-size: .97rem; }
+}

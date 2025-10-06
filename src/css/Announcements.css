@@ -1,0 +1,180 @@
+:root {
+  --brand: #2f6f76;      
+  --brand-300: #78a7ab;
+  --ink-900: #1e1e1e;
+  --ink-700: #374151;
+  --ink-600: #4b5563;
+  --ink-500: #6b7280;
+  --card-bg: #ffffff;
+  --page-bg: #ffffff;    
+  --border: #e6e6e6;
+}
+
+
+.ann.section {
+  background: var(--page-bg);
+  padding: clamp(36px, 5vw, 56px) 20px;
+}
+
+
+.ann-head {
+  max-width: 1160px;
+  margin: 0 auto clamp(18px, 3vw, 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ann-title {
+  margin: 0;
+  color: var(--brand);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.2rem);
+  position: relative;
+}
+
+
+
+
+
+.ann-grid {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 8px;                   
+  list-style: none;
+  display: grid;
+  gap: clamp(14px, 2vw, 20px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 980px) {
+  .ann-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .ann-grid { grid-template-columns: 1fr; }
+}
+
+
+.ann-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.ann-link {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.ann-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(47, 111, 118, 0.12); 
+  border-color: var(--brand-300);
+}
+
+
+.ann-media {
+  aspect-ratio: 16 / 9;
+  background: #eff4f6;
+  overflow: hidden;
+  position: relative;
+}
+
+.ann-media::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.06));
+  pointer-events: none;
+}
+
+.ann-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform .5s ease;
+}
+
+.ann-card:hover .ann-media img { transform: scale(1.06); }
+
+
+.ann-media--placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--ink-500);
+  font-size: .9rem;
+}
+
+
+.ann-body {
+  padding: 14px 16px 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.ann-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ann-badge {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e4f0f1;  
+  color: var(--brand);
+  letter-spacing: .2px;
+}
+
+.ann-date {
+  font-size: .8rem;
+  color: var(--ink-500);
+}
+
+.ann-card-title {
+  margin: 2px 0 0;
+  font-size: clamp(1.02rem, .95rem + .4vw, 1.15rem);
+  line-height: 1.35;
+  color: var(--ink-900);
+}
+
+.ann-card-excerpt {
+  margin: 2px 0 0;
+  color: var(--ink-700);
+  line-height: 1.55;
+  font-size: .98rem;
+}
+
+.ann-source {
+  margin-top: 6px;
+  font-size: .82rem;
+  color: var(--ink-600);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .ann-card, .ann-media img { transition: none; }
+}
+
+
+@media (max-width: 400px) {
+  .ann-body { padding: 12px 12px 14px; }
+  .ann-card-title { font-size: 1rem; }
+  .ann-card-excerpt { font-size: .95rem; }
+  .ann-badge { font-size: .7rem; padding: 3px 8px; }
+}

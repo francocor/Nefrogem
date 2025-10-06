@@ -3,6 +3,8 @@ import CustomCarousel from '../components/CustomCarousel';
 import Acerca from '../sections/Acerca';
 import Staff from '../sections/Staff';
 import Departments from '../sections/Departments';
+import Announcements from '../sections/Announcements';
+import FaqHemodialisis from '../sections/FaqHemodialisis'; 
 import Testimonials from '../sections/Testimonials';
 import Location from '../sections/Location';
 
@@ -13,6 +15,8 @@ function Home() {
       <Acerca />
       <Staff />
       <Departments />
+      <Announcements />
+      <FaqHemodialisis />          
       {/* <div className="row">
         <div className="col-md-6">
           <Testimonials />
