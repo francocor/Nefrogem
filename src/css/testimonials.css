@@ -1,0 +1,138 @@
+/* ===========================
+   Testimonials (3 cards)
+   =========================== */
+
+:root{
+  --brand: #2f6f76;  /* teal institucional */
+  --brand-300: #78a7ab;
+  --ink-900:#1e1e1e;
+  --ink-700:#374151;
+  --ink-600:#4b5563;
+  --border:#e6e6e6;
+  --bg:#ffffff;      /* fondo blanco */
+  --card:#ffffff;
+}
+
+/* Sección */
+.testi.section{
+  background: var(--bg);
+  padding: clamp(36px, 5vw, 56px) 20px;
+}
+
+/* Encabezado */
+.testi-head{
+  max-width: 1160px;
+  margin: 0 auto clamp(18px, 3vw, 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testi-title{
+  margin: 0;
+  color: var(--brand);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .2px;
+  font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.2rem);
+}
+
+/* Grid 3→2→1 */
+.testi-grid{
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 8px;
+  list-style: none;
+  display: grid;
+  gap: clamp(14px, 2vw, 20px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 980px){
+  .testi-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px){
+  .testi-grid{ grid-template-columns: 1fr; }
+}
+
+/* Card */
+.testi-card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: clamp(14px, 2.5vw, 18px);
+  transition: transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+}
+@media (hover:hover){
+  .testi-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(47,111,118,0.12);
+    border-color: var(--brand-300);
+  }
+}
+
+/* Figura */
+.testi-figure{
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+/* Texto del testimonio */
+.testi-text{
+  margin: 0;
+  color: var(--ink-700);
+  font-size: clamp(.98rem, .95rem + .25vw, 1.05rem);
+  line-height: 1.65;
+  position: relative;
+  padding-top: 6px;
+}
+
+/* Comillas decorativas (sutiles) */
+.testi-text::before{
+  content: "“";
+  position: absolute;
+  left: -6px;
+  top: -8px;
+  font-size: 2.2rem;
+  color: rgba(47,111,118,0.2);
+  line-height: 1;
+  transform: translateY(-10%);
+  pointer-events: none;
+}
+
+/* Autor / rol */
+.testi-author{
+  margin: 0;
+}
+.testi-id{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testi-avatar{
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: #e4f0f1;
+  color: var(--brand);
+  display: grid; place-items: center;
+  font-weight: 800;
+  letter-spacing: .3px;
+  user-select: none;
+}
+.testi-meta{
+  display: grid;
+  gap: 2px;
+}
+.testi-name{
+  font-weight: 700;
+  color: var(--ink-900);
+  font-size: .98rem;
+}
+.testi-role{
+  color: var(--ink-600);
+  font-size: .9rem;
+}
+
+/* Motion */
+@media (prefers-reduced-motion: reduce){
+  .testi-card{ transition: none; }
+}

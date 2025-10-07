@@ -17,9 +17,9 @@ function Home() {
       <Departments />
       <Announcements />
       <FaqHemodialisis />          
+      <Testimonials />
       {/* <div className="row">
         <div className="col-md-6">
-          <Testimonials />
         </div>
         <div className="col-md-6">
           <Location />
