@@ -68,10 +68,11 @@ function Turnos() {
             onChange={(e) => setSelectedProfessional(e.target.value)}
           >
             <option value="">-- Seleccione el profesional --</option>
-            <option value="Dr. Martin Choua">Dr. Martin Choua</option>
-            <option value="Lic. Laura Carro">Lic. Laura Carro</option>
-            <option value="Dra. Josefina Orso">Dra. Josefina Orso</option>
-            <option value="Dr. Gustavo Lobo">Dr. Gustavo Lobo</option>
+            <option value="Dr. Martin Choua">Dr. Martin Choua - Nefrologo</option>
+            <option value="Dra. Muller Emma">Dra. Muller Emma - Nefrologa</option>
+            <option value="Lic. Laura Carro">Laura Carro - Lic. en Nutricion</option>
+            <option value="Dra. Josefina Orso">Dra. Josefina Orso - Medicina General</option>
+            <option value="Dr. Gustavo Lobo">Dr. Gustavo Lobo - Cirugia General Laparoscopica</option>
           </select>
         </div>
         {selectedProfessional && (
@@ -80,6 +81,9 @@ function Turnos() {
             <div className="schedule">
               {selectedProfessional === "Dr. Martin Choua" && (
                 <span>Lunes a viernes de 9:00 a 12:00</span>
+              )}
+              {selectedProfessional === "Dra. Muller Emma" && (
+                <span>Viernes de 9:00 a 13:00</span>
               )}
               {selectedProfessional === "Lic. Laura Carro" && (
                 <span>Jueves de 17:00 a 20:00</span>
