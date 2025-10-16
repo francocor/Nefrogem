@@ -1,5 +1,8 @@
 // src/components/Announcements.jsx
 import "../css/Announcements.css";
+import Noticias1 from "../assets/noticias1.png";
+import Noticias2 from "../assets/noticias2.png";
+import Noticias3 from "../assets/noticias3.png";
 
 function domainFrom(url) {
   try {
@@ -20,7 +23,7 @@ export default function Announcements() {
       preview: {
         title: "Nueva publicación en Instagram",
         description: "Conocé las últimas novedades y actividades de Nefrogen.",
-        image: "/img/instagram-preview.jpg"
+        image: Noticias1
       }
     },
     {
@@ -32,7 +35,7 @@ export default function Announcements() {
       preview: {
         title: "Actualización de coberturas",
         description: "Sumamos nuevas obras sociales y beneficios para pacientes.",
-        image: "/img/instagram-preview.jpg"
+        image: Noticias2
       }
     },
     {
@@ -44,7 +47,7 @@ export default function Announcements() {
       preview: {
         title: "Campaña de prevención renal",
         description: "Participá de nuestra campaña gratuita de chequeo y prevención.",
-        image: "/img/instagram-preview.jpg"
+        image: Noticias3
       }
     }
   ];

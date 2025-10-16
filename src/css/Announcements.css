@@ -82,7 +82,7 @@
 
 
 .ann-media {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
   background: #eff4f6;
   overflow: hidden;
   position: relative;
@@ -102,6 +102,11 @@
   object-fit: cover;
   transform: scale(1);
   transition: transform .5s ease;
+}
+
+/* Selector específico para la segunda card */
+.ann-grid li:nth-child(2) .ann-media img {
+  object-position: center 10%;
 }
 
 .ann-card:hover .ann-media img { transform: scale(1.06); }

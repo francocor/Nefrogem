@@ -29,7 +29,7 @@ export default function Testimonials() {
   return (
     <section className="testi section" aria-labelledby="testi-title">
       <div className="testi-head">
-        <h2 id="testi-title" className="testi-title">Comentarios</h2>
+        <h2 id="testi-title" className="testi-title">Testimonios</h2>
       </div>
 
       <ul className="testi-grid" role="list">

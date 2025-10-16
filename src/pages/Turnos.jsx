@@ -69,15 +69,27 @@ function Turnos() {
           >
             <option value="">-- Seleccione el profesional --</option>
             <option value="Dr. Martin Choua">Dr. Martin Choua</option>
-            <option value="Dra. Luján Sosa">Dra. Luján Sosa</option>
+            <option value="Lic. Laura Carro">Lic. Laura Carro</option>
+            <option value="Dra. Josefina Orso">Dra. Josefina Orso</option>
+            <option value="Dr. Gustavo Lobo">Dr. Gustavo Lobo</option>
           </select>
         </div>
         {selectedProfessional && (
           <div className="availability">
             <p>Días y Horas Disponibles:</p>
             <div className="schedule">
-              <span>Lunes 08:00 - 20:00 a </span>
-              <span>Viernes 08:00 - 20:00</span>
+              {selectedProfessional === "Dr. Martin Choua" && (
+                <span>Lunes a viernes de 9:00 a 12:00</span>
+              )}
+              {selectedProfessional === "Lic. Laura Carro" && (
+                <span>Jueves de 17:00 a 20:00</span>
+              )}
+              {selectedProfessional === "Dra. Josefina Orso" && (
+                <span>Miércoles de 14:00 a 19:00</span>
+              )}
+              {selectedProfessional === "Dr. Gustavo Lobo" && (
+                <span>Jueves de 9:00 a 14:00</span>
+              )}
             </div>
           </div>
         )}
