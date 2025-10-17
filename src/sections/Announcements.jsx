@@ -1,8 +1,8 @@
 // src/components/Announcements.jsx
 import "../css/Announcements.css";
-import Noticias1 from "../assets/noticias1.png";
-import Noticias2 from "../assets/noticias2.png";
-import Noticias3 from "../assets/noticias3.png";
+import Noticias1 from "../assets/noticias1.webp";
+import Noticias2 from "../assets/noticias2.webp";
+import Noticias3 from "../assets/noticias3.webp";
 
 function domainFrom(url) {
   try {
